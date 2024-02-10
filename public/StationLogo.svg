@@ -1,7 +1,14 @@
 <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="8" width="16" height="6" rx="3" fill="#FDE047"/>
-<rect width="16" height="6" rx="3" fill="#F97316"/>
-<rect y="12" width="24" height="6" rx="3" fill="#F97316"/>
-<rect y="6" width="16" height="6" rx="3" fill="#F97316"/>
-<rect x="8" y="6" width="16" height="6" rx="3" fill="#FDE047"/>
+<g clip-path="url(#clip0_55_5725)">
+<path d="M21 0H11C9.34315 0 8 1.34315 8 3C8 4.65685 9.34315 6 11 6H21C22.6569 6 24 4.65685 24 3C24 1.34315 22.6569 0 21 0Z" fill="#FDE047"/>
+<path d="M13 0H3C1.34315 0 0 1.34315 0 3C0 4.65685 1.34315 6 3 6H13C14.6569 6 16 4.65685 16 3C16 1.34315 14.6569 0 13 0Z" fill="#F97316"/>
+<path d="M21 12H3C1.34315 12 0 13.3431 0 15C0 16.6569 1.34315 18 3 18H21C22.6569 18 24 16.6569 24 15C24 13.3431 22.6569 12 21 12Z" fill="#F97316"/>
+<path d="M13 6H3C1.34315 6 0 7.34315 0 9C0 10.6569 1.34315 12 3 12H13C14.6569 12 16 10.6569 16 9C16 7.34315 14.6569 6 13 6Z" fill="#F97316"/>
+<path d="M21 6H11C9.34315 6 8 7.34315 8 9C8 10.6569 9.34315 12 11 12H21C22.6569 12 24 10.6569 24 9C24 7.34315 22.6569 6 21 6Z" fill="#FDE047"/>
+</g>
+<defs>
+<clipPath id="clip0_55_5725">
+<rect width="24" height="18" fill="white"/>
+</clipPath>
+</defs>
 </svg>

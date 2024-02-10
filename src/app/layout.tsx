@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { SideNav } from "@/components/ui/SideNav";
+import Image from "next/image";
+import { BarChartBig, BookText } from "lucide-react";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +19,37 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="flex">
+          <SideNav
+            navList={[
+              {
+                label: (
+                  <Image
+                    src={"StationLogo.svg"}
+                    alt="Station logo"
+                    width={24}
+                    height={15}
+                  />
+                ),
+                href: "/",
+                buttonType: "icon",
+              },
+              {
+                label: <BookText className="text-neutral-600" />,
+                href: "/notes",
+                buttonType: "icon",
+              },
+              {
+                label: <BarChartBig className="text-neutral-600" />,
+                href: "/",
+                buttonType: "icon",
+              },
+            ]}
+          />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
