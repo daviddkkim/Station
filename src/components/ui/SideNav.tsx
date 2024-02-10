@@ -11,6 +11,8 @@ export interface SideNavProps
   navList: {
     label: React.ReactNode;
     href: string;
+    buttonType: "icon" | "sm";
+    buttonVariant?: "ghost" | "default" | "secondary";
   }[];
 }
 
@@ -29,7 +31,10 @@ const SideNav = React.forwardRef<HTMLElement, SideNavProps>(
             return (
               <li key={i}>
                 <Link href={navItem.href}>
-                  <Button size={"icon"} variant={"ghost"}>
+                  <Button
+                    size={navItem.buttonType}
+                    variant={navItem.buttonVariant || "ghost"}
+                  >
                     {navItem.label}
                   </Button>
                 </Link>
